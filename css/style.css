@@ -1,0 +1,61 @@
+/*
+Colors used:
+Primary Color
+(White): #FFFFFF;
+Secondary Colors
+(Black): #323230;
+(Light Grey): #F0EFEF;
+(Orange): #EA7639;
+*/
+
+body
+     {background-color: #FFFFFF;
+     font-family: 'Poppins', sans-serif;
+     font-size: 16px; /* Sets the font size to 16px */
+     font-weight: 300; /* Sets the font weight to 300 */
+     line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+     color: #323230;}
+
+     h1, h2, h3, h4
+     {line-height: 1.4;}
+     h1 {font-size: 2.75em; font-weight: 700;}
+     h2 {font-size: 2.25em; font-weight: 700;}
+     h3 {font-size: 1.75em; font-weight: 400;}
+     h4 {font-size: 1.35em; font-weight: 400;}
+
+     img {width: 100%;}
+
+     a {color: #323230;text-decoration: none; /* No underlining */}
+     a:hover {color: #EA7639;text-decorationn: underline; /* Underlining when hovering over a link */}
+     a:visited { /* visited link */color: #565656;}
+     a:active { /* selected link */color: #EA7639;}
+     a:focus {color: #EA7639;text-decoration: underline;}
+
+     .button {
+        display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+        background-color: #EA7639;
+        color: #ffffff; /* needed to override the default link color */
+        font-weight: 400;
+        padding: 6px 20px 6px 20px; 
+        border-radius: 10px;
+        border-bottom: 0px solid #994c30; /* width of the border, type, color */
+        transition: 0.2s opacity;}
+     .button:hover {background-color: #df6422; /* Reduces the opacity of the button to 80% */
+            color: #ffffff;}
+     
+        .button.contact {
+          display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+          background-color: transparent; #EA7639;
+          color: #EA7639; /* needed to override the default link color */
+          text-transform: uppercase;
+          font-weight: 400;
+          border: 2px solid #EA7639;
+          padding: 6px 24px 6px 24px; 
+          border-radius: 10px;
+          border-bottom: 2px solid #EA7639; /* width of the border, type, color */
+          transition: 0.2s opacity;}
+        .button.contact:hover {background-color: #EA7639; /* Reduces the opacity of the button to 80% */
+            color: #ffffff;}
+
+   
+        
