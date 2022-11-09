@@ -11,45 +11,66 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   </head>
-  <body>
+<body>
     <header>
-      <img src="icons/iberends_logo.svg" alt="Isaac Berends Logo" >
-      <nav>
-      <ul>
-         <li><a href="index.html">Work</a></li>
-         <li><a href="about.html">About</a></li>
-         <li><a href="#">Contact</a></li>
-      </ul>
-      </nav>
+      <div class="container">
+        <img src="icons/iberends_logo.svg"class="logo"alt="Isaac Berends Logo" >
+        <nav>
+         <ul>
+           <li><a href="index.html">Work</a></li>
+           <li><a href="about.html">About</a></li>
+           <li><a href="#">Contact</a></li>
+         </ul>
+        </nav>
+      </div>
     </header>
-<main>
-                 <h2>About</h2>
-                 <div><!-- open row that holds (2) columns for project -->
-            <div><!-- open first column (used for image) -->
+  <main>
+    <div id="about">
+      <div class="row">
+        <div class="container">
+          <h2>About</h2>
+
             <picture>
-            <source srcset="img/Self_Portrait@1x.png" media="(max-width:767px)">
-            <img src="img/Self_Portrait@2x.png" alt="Isaac Berends Profile Picture">
+            <source srcset="img/Self_Portrait@1x.png"media="(max-width:767px)">
+            <img src="img/Self_Portrait@2x.png"class="profile"class="center"alt="Isaac Berends Profile Picture">
             </picture>
+              <h2>My Story</h2>
+              <p>Hi, I’m Isaac Berends a Designer / Illustrator
+                 residing in Minneapolis, Minnesota.
+                 <br>
+                 <br>
+                  BFA / MCAD
+                 <br>
+                 <br>
+                  I started my design career at the Minneapolis College of Art and Design. There I landed an internship which transitioned into my first job as a graphic designer / product designer.
+                  <br>
+                  <br>
+                  From there I expanded my horizon and found a new career path as an environmental designer. There, I learned some new skills while refining my design expertise. I branched into 3D modeling, concept illustration, technical illustration, graphic design, and production.
+                  <br>
+                  <br> 
+                  While working there, I took the leap into the digital world, learning more skills to transition into UI design.
+                  <br>
+                  <br> 
+                  I have a profound fascination with art, design, tech, architecture and the natural world. I love problem solving, and creating designs that give users an enjoyable, intuitive, and beautiful experience. I find myself to be logical and detailed oriented.
+                  <br>
+                  <br>
+                  When not creating, I spend a majority of my time traveling, camping, biking, enjoying science based documentaries, film, visiting museums, cooking a delicious meal, and enjoying dinning at a fine restaurants.
+               </p>
+               <div class="button-container"> 
+               <a href="files/isaac_berends_resume_22_E.pdf"class="button" download>Resume</a>
+               </div>
         </div>
-            <h2>My Story</h2>
-            <p>Hi, I’m Isaac Berends a Designer / Illustrator
-            residing in Minneapolis, Minnesota. 
+      </div>
+    </div>
+    <div id="skills">
+      <div class="row">
+        <div class="container">         
             
-            BFA / MCAD
-            
-            I started my design career at the Minneapolis College of Art and Design. There I landed an internship which transitioned into my first job as a graphic designer / product designer.
-            
-            From there I expanded my horizon and found a new career path as an environmental designer. There, I learned some new skills while refining my design expertise. I branched into 3D modeling, concept illustration, technical illustration, graphic design, and production. 
-            
-            While working there, I took the leap into the digital world, learning more skills to transition into UI design. 
-            
-            I have a profound fascination with art, design, tech, architecture and the natural world. I love problem solving, and creating designs that give users an enjoyable, intuitive, and beautiful experience. I find myself to be logical and detailed oriented.
-            
-            When not creating, I spend a majority of my time traveling, camping, biking, enjoying science based documentaries, film, visiting museums, cooking a delicious meal, and enjoying dinning at a fine restaurants.
-            </p>
-            <a href="files/isaac_berends_resume_22_E.pdf" download>Resume</a>
-                <h2>Skills & Tools</h2>
+            <h2>Skills & Tools</h2>
                  <h3>Relevant Skills</h3>
                  <ul>
             <li>UI Design</li>
@@ -84,37 +105,44 @@
                  <li>HTML</li>
                  <li>CSS</li>
                  </ul>
-                 </div>
-     </main>
-    <footer>
-    <h2>Get In Touch</h2>
-    <p>
-        If you’d like to chat more, please reach out and send me
-        an Email. Look forward to hearing from you!
-      </p>
-      <div>
-        <a href="mailto:Isaac.isaac.berends@gmail.com"class="button contact">Send Email</a>
+        </div>
       </div>
-        <a href="https://www.behance.net/isaacberends" target="_blank"></a>
-            <picture>
-                <source srcset="icons/behance@1x.png" media="(max-width:767px)">
-                <img src="icons/behance@2x.png" alt="Behance">
-              </picture>
-    
-        <a href="https://www.instagram.com/i_berends/" target="_blank"></a>
-            <picture>
-                <source srcset="icons/instagram@1x.png" media="(max-width:767px)">
-                <img src="icons/instagram@2x.png" alt="Instagram">
-              </picture>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+       <h2>Get In Touch</h2>
+       
+     <p>
+      If you’d like to chat more, please reach out and send me
+      an Email. Look forward to hearing from you!
+     </p>
+     <div>
+       <div class="button-container-email">  
+          <a href="mailto:Isaac.isaac.berends@gmail.com"class="button contact">Send Email</a>
+       </div>   
+     </div>
+      <div class="images-container"> 
+         <a href="https://www.behance.net/isaacberends" target="_blank"></a>
+          <picture>
+              <source srcset="icons/behance@1x.png" media="(max-width:767px)">
+              <img src="icons/behance@2x.png"class="social" alt="Behance">
+            </picture>
+  
+         <a href="https://www.instagram.com/i_berends/" target="_blank"></a>
+          <picture>
+              <source srcset="icons/instagram@1x.png" media="(max-width:767px)">
+              <img src="icons/instagram@2x.png"class="social"alt="Instagram">
+            </picture>
 
-        <a href="https://www.linkedin.com/in/isaac-berends-153a0312/" target="_blank"></a>
-            <picture>
-                <source srcset="icons/linkedin@1x.png" media="(max-width:767px)">
-                <img src="icons/linkedin@2x.png" alt="LinkedIn">
-              </picture>
-        <p>Website Design and Content © Isaac Berends 2023</p>
-
-
-    </footer>
-    </body>
+         <a href="https://www.linkedin.com/in/isaac-berends-153a0312/" target="_blank"></a>
+          <picture>
+              <source srcset="icons/linkedin@1x.png" media="(max-width:767px)">
+              <img src="icons/linkedin@2x.png"class="social"alt="LinkedIn">
+            </picture>
+       </div> 
+      <p>Website Design and Content © Isaac Berends 2023</p>
+    </div>
+</footer>
+ </body>
 </html>
