@@ -14,11 +14,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
   </head>
 <body>
     <header>
       <div class="container">
-        <img src="icons/iberends_logo.svg"class="logo"alt="Isaac Berends Logo" >
+        <img src="icons/iberends_logo.svg" class="logo" alt="Isaac Berends Logo" >
         <nav>
          <ul>
            <li><a href="index.html">Work</a></li>
@@ -31,82 +34,88 @@
   <main>
     <div id="hero">
       <div class="container">
-        <div><h1>Hello! I'm <br>Isaac Berends</h1></div>
-           <span></span>
-             <p>I am a Designer residing in Minneapolis, Minnesota! I possess a wide variety of design skill sets. Let’s go on a journey and I can
-                share them with you! </p>
+        <div>
+          <h1>Hello! I'm <br>Isaac Berends</h1>
+        </div>
+           <span>
+             <p>I am a Designer residing in Minneapolis, Minnesota! <br> I possess a wide variety of design skill sets. Let’s go on a journey and I can
+                share them with you!</p>
+           </span>
       </div>
     </div>  
-    <div id="work"> 
-       <div class="container"> 
+    <div id="work" class="container"> 
         <h2>My Work</h2>
         
         <div class="row">
-          <div class="container">
-            <picture>
+          <div class="col-md-6">
+              <picture>
                 <source srcset="img/80s/80s_Header@1x.jpg" media="(max-width:767px)">
                 <img src="img/80s/80s_Header@2x.jpg" alt="Vela Weather App Mockup">
               </picture>
           </div>
-          <div class="container"> 
+             
+             <div class="col-md-6"> 
               <h3>80s Music Player</h3>
               <p>The 80s Music Player App is a UI case study of a music playing app tailored to the 80s music genre. The objective was to create an app that users can listen, find, and organized their favorite 80s music hits.</p>
               <div class="button-container"> 
-                <a href="project_80s.html"class="button">View Project</a>
-              </div>  
-          </div>
+                <a href="project_80s.html" class="button">View Project</a>
+             </div>  
+            </div>
         </div>
         
         <div class="row">
-         <div class="container">
+          <div class="col-md-6">
             <picture>
                 <source srcset="img/recette/Recette_Header@1x.jpg" media="(max-width:767px)">
                 <img src="img/recette/Recette_Header@2x.jpg" alt="Vela Weather App Mockup">
                 </picture>
           </div>
-         <div class="container"> 
+          
+          <div class="col-md-6">
            <h3>Recette</h3>
            <p>Recette is a UI/UX case study of a responsive web app. The objective was to create a mobile, tablet and web
               app the fits the users needs of finding, saving, and
               sharing recipes.</p>
               <div class="button-container"> 
-                <a href="project_recette.html"class="button">View Project</a>
+                <a href="project_recette.html" class="button">View Project</a>
               </div>  
           </div><!-- end second column -->
         </div><!-- end row that holds (2) columns for project -->
 
         <div class="row">
-          <div class="container">
-            <picture>
+          <div class="col-md-6">
+             <picture>
                 <source srcset="img/convene/Convene_Header@1x.jpg" media="(max-width:767px)">
                 <img src="img/convene/Convene_Header@2x.jpg" alt="Vela Weather App Mockup">
-                </picture>
+             </picture>
           </div><!-- end first column -->
-         <div class="container"> 
+
+         <div class="col-md-6"> 
            <h3>Convene</h3>
            <p>Convene is a UI case study of an event app. The objective was to create a native mobile app for both iOS, and Android. This app allows users to solve the problem of finding and creating events around them.</p>
            <div class="button-container"> 
-             <a href="project_convene.html"class="button">View Project</a>
+             <a href="project_convene.html" class="button">View Project</a>
            </div>  
           </div><!-- end second column -->
         </div><!-- end row that holds (2) columns for project -->
 
         <div class="row">
-          <div class="container">
+          <div class="col-md-6">
             <picture>
                 <source srcset="img/knox/Knox_Header@1x.jpg" media="(max-width:767px)">
                 <img src="img/knox/Knox_Header@2x.jpg" alt="Vela Weather App Mockup">
                 </picture>
           </div><!-- end first column -->
-         <div class="container"> 
-           <h3>Knox</h3>
-           <p>Knox is a UI case study of a money saving tool. The objective was to create an app that helps users manage their finances and save money for a big purchase.</p>
-           <div class="button-container"> 
-             <a href="project_knox.html"class="button">View Project</a>
+
+          <div class="col-md-6"> 
+             <h3>Knox</h3>
+             <p>Knox is a UI case study of a money saving tool. The objective was to create an app that helps users manage their finances and save money for a big purchase.</p>
+             <div class="button-container"> 
+             <a href="project_knox.html" class="button">View Project</a>
            </div>
            </div><!-- end second column -->
-         </div><!-- end row that holds (2) columns for project -->
-        </div>
+        </div><!-- end row that holds (2) columns for project -->
+
     </div>    
   </main>
   <footer>
@@ -119,26 +128,26 @@
        </p>
        <div>
          <div class="button-container-email">  
-            <a href="mailto:Isaac.isaac.berends@gmail.com"class="button contact">Send Email</a>
+            <a href="mailto:Isaac.isaac.berends@gmail.com" class="button contact">Send Email</a>
          </div>   
        </div>
         <div class="images-container"> 
            <a href="https://www.behance.net/isaacberends" target="_blank"></a>
             <picture>
                 <source srcset="icons/behance@1x.png" media="(max-width:767px)">
-                <img src="icons/behance@2x.png"class="social" alt="Behance">
+                <img src="icons/behance@2x.png" class="social" alt="Behance">
               </picture>
     
            <a href="https://www.instagram.com/i_berends/" target="_blank"></a>
             <picture>
                 <source srcset="icons/instagram@1x.png" media="(max-width:767px)">
-                <img src="icons/instagram@2x.png"class="social"alt="Instagram">
+                <img src="icons/instagram@2x.png" class="social" alt="Instagram">
               </picture>
 
            <a href="https://www.linkedin.com/in/isaac-berends-153a0312/" target="_blank"></a>
             <picture>
                 <source srcset="icons/linkedin@1x.png" media="(max-width:767px)">
-                <img src="icons/linkedin@2x.png"class="social"alt="LinkedIn">
+                <img src="icons/linkedin@2x.png" class="social" alt="LinkedIn">
               </picture>
          </div> 
         <p>Website Design and Content © Isaac Berends 2023</p>
