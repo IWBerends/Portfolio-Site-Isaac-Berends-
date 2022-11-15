@@ -1,170 +1,142 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr">    
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Isaac Berends">
-	  <meta name="description" content="Isaac Berends UI/UX Design Portfolio">
-    <title>Isaac Berends Designer Minneapolis</title>
+    <meta name="author" content="John Doe">
+    <meta name="description" content="Isaac Berends UI/UX Design Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="img/fav/favicon.ico" rel="shortcut icon">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    
+    <title>Isaac Berends Designer Minneapolis</title>
   </head>
-<body>
-    <header>
-      <div class="container">
-        <img src="icons/iberends_logo.svg"class="logo"alt="Isaac Berends Logo" >
-        <nav>
-         <ul>
-           <li><a href="index.html">Work</a></li>
-           <li><a href="about.html">About</a></li>
-           <li><a href="#">Contact</a></li>
-         </ul>
-        </nav>
-      </div>
-    </header>
-  <main>
-    <div id="about" class="container">
+  <body id="index">
+    <!-- For the header -->
+	<header>
+		<!-- For the navigation -->
+		<div class="container">
+            <a href="index.html">
+			 <img src="icons/iberends_logo.svg" class="logo" alt="Logo" >
+            </a>
+            <nav>
+              <ul class="navigation">
+                <li><a href="index.html">Work</a></li>
+                <li class="active"><a href="about.html">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+		</div>
+	</header>
       
-        <h2>About</h2>
-          <div class="row">
-            <div class="col-md-6">
-              <picture>
-              <source srcset="img/Self_Portrait@1x.png"media="(max-width:767px)">
-              <img src="img/Self_Portrait@2x.png"class="profile"class="center"alt="Isaac Berends Profile Picture">
-              </picture>
+   <main>
+        <!-- For the hero section -->
+        <div id="hero">
+            <div class="container">
+                <h1>About</h1>
             </div>
-          
-       
-              
-              
-                <div class="col-md-6">
-                 <h3>My Story</h3>
-                 <p>Hi, I’m Isaac Berends a Designer / Illustrator
-                    residing in Minneapolis, Minnesota.
-                    <br>
-                    <br>
-                    BFA / MCAD
-                    <br>
-                    <br>
-                     I started my design career at the Minneapolis College of Art and Design. There I landed an internship which transitioned into my first job as a graphic designer / product designer.
-                    <br>
-                    <br>
-                     From there I expanded my horizon and found a new career path as an environmental designer. There, I learned some new skills while refining my design expertise. I branched into 3D modeling, concept illustration, technical illustration, graphic design, and production.
-                    <br>
-                    <br> 
-                    While working there, I took the leap into the digital world, learning more skills to transition into UI design.
-                    <br>
-                    <br> 
-                    I have a profound fascination with art, design, tech, architecture and the natural world. I love problem solving, and creating designs that give users an enjoyable, intuitive, and beautiful experience. I find myself to be logical and detailed oriented.
-                    <br>
-                    <br>
-                    When not creating, I spend a majority of my time traveling, camping, biking, enjoying science based documentaries, film, visiting museums, cooking a delicious meal, and enjoying dinning at a fine restaurants.
-                   </p>
-                  <div class="button-container"> 
-                  <a href="files/isaac_berends_resume_22_E.pdf"class="button" download>Resume</a>
-                </div>
-              </div>
-            </div>   
         </div>
-      </div>
-    </div>
-    <div id="skills" class="container">       
-            
-          <h2>Skills & Tools</h2>
-          <div class="row">
-            <div class=" col-md-6">
-
-                <h3>Relevant Skills</h3>
-                  <div class="row">
-                    <div class=" col-md-6">
-                    <ul>
-                     <li>UI Design</li>
-                     <li>Graphic Design</li>
-                     <li>Branding</li>
-                     <li>Style Guides</li>
-                     <li>Logo Creation</li>
-                     <li>Pattern</li>
-                     <li>Typography</li>
-                     <li>Illustration</li>
-                     <li>Animation</li>
-                 
-
-                     <li>UX Research</li>
-                     <li>Competitive Analysis</li>
-                     <li>User Testing</li>
-                     <li>User Interviews</li>
-                     <li>Prototyping</li>
-                     <li>User Testing</li>
-                     <li>Personas</li>
-                     <li>User Flows</li>
-                     <li>Wireframes</li>
-                    </ul>
-                  </div>
+            <div><!--For the image, My Story and Skills and tools sections-->
+                <div>
+                    <div class="profile-image">
+                        <picture style="">
+                          <source srcset="img/Self_Portrait@1x.png" media="(max-width:767px)">
+                          <img src="img/Self_Portrait@2x.png" alt="Isaac Berends Profile Picture">
+                        </picture>
+                    </div>
+            <div class="container">
+                    <div><!--For My Story and Skills and tools sections-->
+                        <div class="column col-lg-7 story"><!--Column one-->
+                            <h2>My Story</h2>
+                            <p>Hi, I’m Isaac Berends a Designer / Illustrator residing in Minneapolis, Minnesota.</p>
+                            <p><strong>BFA / MCAD</strong></p>
+                            <p>I started my design career at the Minneapolis College of Art and Design. There I landed an internship which transitioned into my first job as a graphic designer / product designer.</p>
+                            <p>From there I expanded my horizon and found a new career path as an environmental designer. There, I learned some new skills while refining my design expertise. I branched into 3D modeling, concept illustration, technical illustration, graphic design, and production.</p>
+                            <p>While working there, I took the leap into the digital world, learning more skills to transition into UI design.</p>
+                            <p>I have a profound fascination with art, design, tech, architecture and the natural world. I love problem solving, and creating designs that give users an enjoyable, intuitive, and beautiful experience. I find myself to be logical and detailed oriented.</p>
+                            <p>When not creating, I spend a majority of my time traveling, camping, biking, enjoying science based documentaries, film, visiting museums, cooking a delicious meal, and enjoying dinning at a fine restaurants.</p>
+                            <div class="center"><a href="files/isaac_berends_resume_22_E.pdf" target="_blank" class="button secondary">Resume</a></div>
+                        </div>
+                        <div class="column col-lg-8"><!--Column two-->
+                            <h2>Skills &amp; Tools</h2>
+                            <div class="column col-md-6"><!--Column two, row one-->
+                                <h3>Relevant Skills</h3>
+                                <ul>
+                                    <li>UI Design</li>
+                                    <li>Graphic Design</li>
+                                    <li>Branding</li>
+                                    <li>Style Guides</li>
+                                    <li>Logo Creation</li>
+                                    <li>Pattern</li>
+                                    <li>Typography</li>
+                                    <li>Illustration</li>
+                                    <li>Animation</li>
+                                    <li>UX Research</li>
+                                    <li>Competitive Analysis</li>
+                                    <li>User Testing</li>
+                                    <li>User Interviews</li>
+                                    <li>Prototyping</li>
+                                    <li>User Testing</li>
+                                    <li>Personas</li>
+                                    <li>User Flows</li>
+                                    <li>Wireframes</li>
+                                </ul>
+                            </div>
+                            <div class="column col-md-6"><!--Column two, row two-->
+                                <h3>Tools I use</h3>
+                                <ul>
+                                    <li>Adobe XD</li>
+                                    <li>Adobe Photoshop</li>
+                                    <li>Adobe Illustrator</li>
+                                    <li>Adobe InDesign</li>
+                                    <li>Adobe After Effects</li>
+                                    <li>Sketch</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-          </div>
+        </div>
+    </main>
+ <!-- For the footer  -->
+	<footer id="contact" style="clear:both;">
+		<div class="container">
+            <h2>Get in touch</h2>
+            <p>If you’d like to chat more, please reach out and send me an Email. Look forward to hearing from you!</p> 
             
-                
-                <h3>Tools</h3>
-                  <div class="row">    
-                   <div class=" col-md-6"> 
-                     <ul>
-                       <li>Adobe XD</li>
-                       <li>Adobe Photoshop</li>
-                       <li>Adobe Illustrator</li>
-                       <li>Adobe InDesign</li>
-                       <li>Adobe After Effects</li>
-            
-                       <li>Sketch</li>
-                       <li>HTML</li>
-                       <li>CSS</li>
-                      </ul>
-                   </div>
-                 </div>
+            <div>
+                <a href="mailto:Isaac.isaac.berends@gmail.com" class="button contact">Email me</a>
+            </div>
+            <ul class="social">
+            <!--Social Media Layout and Placeholders-->
+            <!--For students, the images below should be updated with real svgs and links should be updated-->
+                <li>
+                    <a href="https://www.behance.net/isaacberends" target="_blank">
+                        <img src="icons/behance@1x.png" alt="Behance">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/i_berends/" target="_blank">
+                        <img src="icons/instagram@1x.png" alt="Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/isaac-berends-153a0312/">
+                        <img src="icons/linkedin@1x.png" alt="Social">
+                    </a>
+                </li>
+            </ul>
+            <p>Website Design and Content © Isaac Berends 2023</p>
+        </div>
         
-      
-    </div>
-  </main>
-  <footer>
-    <div class="container">
-       <h2>Get In Touch</h2>
-       
-     <p>
-      If you’d like to chat more, please reach out and send me
-      an Email. Look forward to hearing from you!
-     </p>
-     <div>
-       <div class="button-container-email">  
-          <a href="mailto:Isaac.isaac.berends@gmail.com"class="button contact">Send Email</a>
-       </div>   
-     </div>
-      <div class="images-container"> 
-         <a href="https://www.behance.net/isaacberends" target="_blank"></a>
-          <picture>
-              <source srcset="icons/behance@1x.png" media="(max-width:767px)">
-              <img src="icons/behance@2x.png"class="social" alt="Behance">
-            </picture>
-  
-         <a href="https://www.instagram.com/i_berends/" target="_blank"></a>
-          <picture>
-              <source srcset="icons/instagram@1x.png" media="(max-width:767px)">
-              <img src="icons/instagram@2x.png"class="social"alt="Instagram">
-            </picture>
-
-         <a href="https://www.linkedin.com/in/isaac-berends-153a0312/" target="_blank"></a>
-          <picture>
-              <source srcset="icons/linkedin@1x.png" media="(max-width:767px)">
-              <img src="icons/linkedin@2x.png"class="social"alt="LinkedIn">
-            </picture>
-       </div> 
-      <p>Website Design and Content © Isaac Berends 2023</p>
-    </div>
-  </footer>
-</body>
+	</footer>
+  </body>
 </html>
