@@ -2,8 +2,8 @@
 <html lang="en" dir="ltr">    
   <head>
     <meta charset="utf-8">
-    <meta name="author" content="John Doe">
-    <meta name="description" content="Isaac Berends UI/UX Design Portfolio">
+    <meta name="author" content="Isaac Berends">
+    <meta name="Knox" content="Isaac Berends Money Saving Tool UI Case Study">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="img/fav/favicon.ico" rel="shortcut icon">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
@@ -13,7 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    
+    <script src="https://kit.fontawesome.com/e5d3b87ae5.js" crossorigin="anonymous"></script>
+
     <title>Isaac Berends Designer Minneapolis</title>
   </head>
   <body id="index">
@@ -21,6 +22,7 @@
 	<header>
 		<!-- For the navigation -->
 		<div class="container">
+          <div class="navtoggle" id="mynavtoggle">
             <a href="index.html">
 			 <img src="icons/iberends_logo.svg" class="logo" alt="Logo" >
             </a>
@@ -29,8 +31,11 @@
                 <li class="active"><a href="index.html">Work</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+
               </ul>
             </nav>
+          </div>  
 		</div>
 	</header>
       
@@ -98,6 +103,9 @@
         </div>
         
 	</footer>
-    <script src="js/scripts.js"></script>
+
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+     <script src="js/scripts.js"></script>
+
   </body>
 </html>
