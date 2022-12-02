@@ -2,392 +2,406 @@
 
 /*setting the default width of an element to include the padding and the border via the box-sizing property and border-box value*/
 * {
-  box-sizing: border-box;
-}
-
-/*--------------------------------------------End Section---------------------------------------------*/
-/*-------------------------------------------Start Section---------------------------------------------*/
-/*default body settings*/
-
-body {
-  background-color: #ffffff;
-  font-family: 'Poppins', sans-serif;
-  /*font-family: 'Lato', sans-serif;*/
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #4a4a4a;
-}
-
-h1, h2, h3, h4 {
-  line-height: 1.4;
-}
-
-h1 {
-  font-size: 2.75em;
-  font-weight: 700;
-}
-
-
-
-h2 {
-  font-size: 2.25em;
-  font-weight: 700;
-}
-
-h3 {
-  font-size: 1.75em;
-  font-weight: 400;
-  margin-top: -8px;
-}
-
-#about-page h3 { margin-top: 0;}
-
-h4 {
-  font-size: 1.35em;
-  font-weight: 400;
-}
-
-
-/*setting images to full-width*/
-img {
-  width: 100%;
-}
-
-.profile-image {
-    border-bottom: 6px solid #ff7f50;
-    padding-bottom: 40px;
-    text-align: center;
-}
-
-.profile-image img {
-    width: 75%;
-}
-
-/*change the default link color to your primary color (copied from your comments at the top of the document)*/
-a {
-  color: #ff7f50;
-  text-decoration: none; /* No underlining */
-}
-a:hover {
-  color: #cc6540;
-  text-decoration: none; /* Underlining when hovering over a link */
-}
-
-/*style the current nav item #ff7f50*/
-.active a {
-    color: #ff7f50;
-    
-}
-
-a:active { /* selected link */
-  color: #ff7f50;
-}
-
-/*Pseudo classes for Accessibility for Across the Web*/
-a:hover,
-a:focus {
-  color: #ff7f50;
-  text-decoration: none;
-}
-
-.story p {
-    text-align: center;
-}
-
-
-/*CSS code for the button class*/
-.button {
-  display: inline-block;
-  background-color: #ff7f50;
-  color: white;
-  font-weight: 400;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #994c30;
-  transition: 0.8s opacity;
-}
-
-.button:hover {
-  opacity: 0.8;
-  color: #ffffff;
-  background-color: #ff7f50;
-  text-decoration: none;
-}
-
-.button:active {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
-  text-decoration: none;
-}
-
-
-/*button rules for the mailto button*/
-.button.contact {
-  background-color: transparent;
-  color: #ff7f50;
-  text-transform: uppercase;
-  border: 2px solid #ff7f50;
-  transition: 0.8s opacity;
-}
-
-/*button class hover and active state*/
-
-.button.contact:hover {
-  opacity: 0.8;
-  background-color: #ff7f50;
-  color: #ffffff;
-}
-
-.button.contact:active {
-  opacity: 0.8;
-  background-color: #ff7f50;
-  color: #ffffff;
-}
-
-/*--------------------------------------------End Section---------------------------------------------*/
-/*-------------------------------------------Start Section---------------------------------------------*/
-/*stye the page sections*/
-
-/*style the <header> element*/
-header {
-  background-color: #ffffff;
-  padding: 10px 0;
-  position: relative;
-  border-bottom: 3px solid #ff7f50;
-}
-
-/*style the logo*/
-header .logo {
-  max-width: 80px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-/*Navigation Styling*/
-nav {
-  box-sizing: border-box;
-  width: 100%;}
-
-nav > ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-
-
-
-nav > ul > li > a {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 400;
-  color: #4a4a4a;
-}
-
-#hero {
-  background-color: #ffffff;
-  padding: 40px 0;
-  display: inline-block;
-  width: 100%;
-}
-
-#hero span {
-  display: block;
-}
-
-#contact {
-    background-color: #f2f2f2;
-    padding: 20px;
-}
-
-.navtoggle li:not(:last-child) {
-  display: none;
-}
-
-.navtoggle, .navtoggle.responsive {
-  position: relative;
-}
-
-.navtoggle.responsive li  {
-  display: block;
-}
-
-.navtoggle li .icon {
-  position: absolute;
-  right: 0;
-  top: 2px;
-  font-size: 20px;
-  padding-right: 5px;
-}
-
-.navtoggle.responsive nav {
-  padding: 24px 0 0;
-}
-.navtoggle.responsive li  {
-  display: block;
-  padding: 10px 0;
-  border-top: 1px solid #4a4a4a;
-}
-
-.navtoggle.responsive li:last-child  {
-  padding: 0 0 10px;
-}
-
-
-/*Style the social icons*/
-.social {
-  list-style-type: none;
-  padding: 0;
-  margin-left: -10px;
-}
-
-.social li {
-  display: inline-block;
-  margin-top: 10px;
-  margin-left: 10px;
-}
-
-.social img {
-  height: 32px;
-  width: 32px;
-}
-/*--------------------------------------------End Section---------------------------------------------*/
-/*-------------------------------------------Start Section---------------------------------------------*/
-/* Layout styling */
-
-.container {
-  padding: 0 15px;
-}
-
-.row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
-}
-
-#work .row { padding-bottom: 20px; }
-
-/*--------------------------------------------End Section---------------------------------------------*/
-/*-------------------------------------------Start Section---------------------------------------------*/
-/*Media Queries*/
-
-/*clear page flow*/
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/*float all columns left*/
-[class*="col-"] {
-  padding: 10px;
-}
-
-/* ==============================
-Medium devices (640px and larger)
-================================= */
-@media only screen and (min-width: 640px) {
+    box-sizing: border-box;
+  }
+  
+  /*--------------------------------------------End Section---------------------------------------------*/
+  /*-------------------------------------------Start Section---------------------------------------------*/
+  /*default body settings*/
+  
   body {
-    font-size: 18px;
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    /*font-family: 'Lato', sans-serif;*/
+    font-size: 16px; /* Sets the font size to 16px */
+    font-weight: 300; /* Sets the font weight to 300 */
+    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+    color: #4a4a4a;
   }
-    
-  header {
-    text-align: unset;
-    padding: 20px 0 13px;
+  
+  h1, h2, h3, h4 {
+    line-height: 1.4;
+  }
+  
+  h1 {
+    font-size: 2.75em;
+    font-weight: 700;
+  }
+  
+  
+  
+  h2 {
+    font-size: 2.25em;
+    font-weight: 700;
+  }
+  
+  h3 {
+    font-size: 1.75em;
+    font-weight: 400;
+    margin-top: -8px;
+  }
+  
+  #about-page h3 { margin-top: 0;}
+  
+  h4 {
+    font-size: 1.35em;
+    font-weight: 400;
+  }
+  
+  
+  /*setting images to full-width*/
+  img {
+    width: 100%;
+  }
+  
+  .profile-image {
+      border-bottom: 6px solid #ff7f50;
+      padding-bottom: 40px;
+      text-align: center;
+  }
+  
+  .profile-image img {
+      width: 55%;
+  }
+  
+  /*change the default link color to your primary color (copied from your comments at the top of the document)*/
+  a {
+    color: #ff7f50;
+    text-decoration: none; /* No underlining */
+  }
+  a:hover {
+    color: #cc6540;
+    text-decoration: none; /* Underlining when hovering over a link */
+  }
+  
+  /*style the current nav item #ff7f50*/
+  .active a {
+      color: #ff7f50;
+      
+  }
+  
+  a:active { /* selected link */
+    color: #ff7f50;
+  }
+  
+  /*Pseudo classes for Accessibility for Across the Web*/
+  a:hover,
+  a:focus {
+    color: #ff7f50;
+    text-decoration: none;
+  }
+  
+  .story p {
+      text-align: center;
+  }
+  
+  
+  /*CSS code for the button class*/
+  .button {
+    display: inline-block;
+    background-color: #ff7f50;
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    border-bottom: 2px solid #994c30;
+    transition: 0.8s opacity;
   }
 
+  .buttonvp {
+    display: inline-block;
+    background-color: #ff7f50;
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    border-bottom: 2px solid #994c30;
+    transition: 0.8s opacity;
+    float: right;
+  }
+  
+  .button:hover {
+    opacity: 0.8;
+    color: #ffffff;
+    background-color: #ff7f50;
+    text-decoration: none;
+  }
+  
+  .button:active {
+    opacity: 0.8; /* Reduces the opacity of the button to 80% */
+    text-decoration: none;
+  }
+  
+  
+  /*button rules for the mailto button*/
+  .button.contact {
+    background-color: transparent;
+    color: #ff7f50;
+    text-transform: uppercase;
+    border: 2px solid #ff7f50;
+    transition: 0.8s opacity;
+  }
+  
+  /*button class hover and active state*/
+  
+  .button.contact:hover {
+    opacity: 0.8;
+    background-color: #ff7f50;
+    color: #ffffff;
+  }
+  
+  .button.contact:active {
+    opacity: 0.8;
+    background-color: #ff7f50;
+    color: #ffffff;
+  }
+  
+  /*--------------------------------------------End Section---------------------------------------------*/
+  /*-------------------------------------------Start Section---------------------------------------------*/
+  /*stye the page sections*/
+  
+  /*style the <header> element*/
+  header {
+    background-color: #ffffff;
+    padding: 10px 0;
+    position: relative;
+    border-bottom: 3px solid #ff7f50;
+  }
+  
+  /*style the logo*/
   header .logo {
     max-width: 80px;
     margin-top: 10px;
     margin-bottom: 10px;
   }
-
+  
+  /*Navigation Styling*/
   nav {
-    width: auto;
-    float: right;
-  }
-
-  nav > ul {
-    margin: 1em 0;
-  }
-
-  nav > ul > li {
-    display: inline-block;
     box-sizing: border-box;
-  }
-    
-  .col-md-6 {
-    width: 50%;
-    float: left;
-    padding-bottom: 40px;
-  }
-    
-  .profile-image {
-    padding-bottom: 80px;
-  }
-    
- .profile-image img {
-    width: 50%;
-  }
-
-  .navtoggle.responsive nav {
-    padding: 0;
-  }
-
-  .navtoggle.responsive li {
+    width: 100%;}
+  
+  nav > ul {
+    list-style-type: none;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
   }
-
-  .navtoggle li:not(:last-child) {
+  
+  
+  
+  
+  nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #4a4a4a;
+  }
+  
+  #hero {
+    background-color: #ffffff;
+    padding: 40px 0;
     display: inline-block;
+    width: 100%;
   }
-
-  .navtoggle li:last-child {
+  
+  #hero span {
+    display: block;
+  }
+  
+  #contact {
+      background-color: #f2f2f2;
+      padding: 20px;
+  }
+  
+  .navtoggle li:not(:last-child) {
     display: none;
   }
+  
+  .navtoggle, .navtoggle.responsive {
+    position: relative;
+  }
+  
+  .navtoggle.responsive li  {
+    display: block;
+  }
+  
+  .navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+    padding-right: 5px;
+  }
+  
+  .navtoggle.responsive nav {
+    padding: 24px 0 0;
+  }
+  .navtoggle.responsive li  {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid #4a4a4a;
+  }
+  
+  .navtoggle.responsive li:last-child  {
+    padding: 0 0 10px;
+  }
 
-    
-}
-
-
-/* ==============================
-Large devices (1024px or larger)
-================================= */
-@media only screen and (min-width: 1024px) {
+  /*Style the social icons*/
+  .social {
+    list-style-type: none;
+    padding: 0;
+    margin-left: -10px;
+  }
+  
+  .social li {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  
+  .social img {
+    height: 32px;
+    width: 32px;
+  }
+  /*--------------------------------------------End Section---------------------------------------------*/
+  /*-------------------------------------------Start Section---------------------------------------------*/
+  /* Layout styling */
+  
   .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 0 15px;
   }
-  .col-lg-7 {
-    width: 60%;
+  
+  .row {
+    margin: 25px 0; /* 25px top and bottom, 0 left and right */
   }
+  
+  #work .row { padding-bottom: 20px; }
+  
+  /*--------------------------------------------End Section---------------------------------------------*/
+  /*-------------------------------------------Start Section---------------------------------------------*/
+  /*Media Queries*/
+  
+  /*clear page flow*/
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /*float all columns left*/
+  [class*="col-"] {
+    padding: 10px;
+  }
+  
+  /* ==============================
+  Medium devices (640px and larger)
+  ================================= */
+  @media only screen and (min-width: 640px) {
+    
 
-  .col-lg-5 {
-    width: 40%;
-  }
-    
-  .col-lg-7 {
-    width: 60%;
-    float: left;
-    padding-bottom: 40px;
-  }
-  .col-lg-8 {
-    width: 40%;
-    float: right;
-  }
-    
-   #about-page .col-md-6 {
-     width: 100%;
-  }
-    
-  .profile-image img {
-    width: 25%;
-  }
-    
-    .story p {
-        text-align: left;
+    body {
+      font-size: 18px;
     }
-    
-}
+      
+    header {
+      text-align: unset;
+      padding: 20px 0 13px;
+    }
+  
+    header .logo {
+      max-width: 80px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  
+    nav {
+      width: auto;
+      float: right;
+    }
+  
+    nav > ul {
+      margin: 1em 0;
+    }
+  
+    nav > ul > li {
+      display: inline-block;
+      box-sizing: border-box;
+    }
+      
+    .col-md-6 {
+      width: 50%;
+      float: left;
+      padding-bottom: 40px;
+    }
+      
+    .profile-image {
+      padding-bottom: 80px;
+    }
+      
+   .profile-image img {
+      width: 40%;
+    }
+  
+    .navtoggle.responsive nav {
+      padding: 0;
+    }
+  
+    .navtoggle.responsive li {
+      padding: 0;
+      margin: 0;
+    }
+  
+    .navtoggle li:not(:last-child) {
+      display: inline-block;
+    }
+  
+    .navtoggle li:last-child {
+      display: none;
+    }
+  
+      
+  }
+  
+  
+  /* ==============================
+  Large devices (1024px or larger)
+  ================================= */
+  @media only screen and (min-width: 1024px) {
+    .container {
+      max-width: 1050px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .col-lg-7 {
+      width: 60%;
+    }
+  
+    .col-lg-5 {
+      width: 40%;
+    }
+      
+    .col-lg-7 {
+      width: 60%;
+      float: left;
+      padding-bottom: 40px;
+    }
+    .col-lg-8 {
+      width: 40%;
+      float: right;
+    }
+      
+     #about-page .col-md-6 {
+       width: 100%;
+    }
+      
+    .profile-image img {
+      width: 25%;
+    }
+      
+      .story p {
+          text-align: left;
+      }
+      
+  }
