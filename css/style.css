@@ -27,8 +27,7 @@
     font-size: 2.75em;
     font-weight: 700;
   }
-  
-  
+    
   
   h2 {
     font-size: 2.25em;
@@ -55,7 +54,7 @@
   }
   
   .profile-image {
-      border-bottom: 6px solid #ff7f50;
+      border-bottom: 6px solid #fb5113;
       padding-bottom: 40px;
       text-align: center;
   }
@@ -66,28 +65,28 @@
   
   /*change the default link color to your primary color (copied from your comments at the top of the document)*/
   a {
-    color: #ff7f50;
+    color: #fb5113;
     text-decoration: none; /* No underlining */
   }
   a:hover {
-    color: #cc6540;
+    color: #DB3700;
     text-decoration: none; /* Underlining when hovering over a link */
   }
   
   /*style the current nav item #ff7f50*/
   .active a {
-      color: #ff7f50;
+      color: #fb5113;
       
   }
   
   a:active { /* selected link */
-    color: #ff7f50;
+    color: #fb5113;
   }
   
   /*Pseudo classes for Accessibility for Across the Web*/
   a:hover,
   a:focus {
-    color: #ff7f50;
+    color: #DB3700;
     text-decoration: none;
   }
   
@@ -99,34 +98,42 @@
   /*CSS code for the button class*/
   .button {
     display: inline-block;
-    background-color: #ff7f50;
+    background-color: #DB3700;
     color: white;
     font-weight: 400;
     text-decoration: none;
     padding: 10px;
     border-radius: 5px;
-    border-bottom: 2px solid #994c30;
+    border-bottom: 1px solid #994c30;
     transition: 0.8s opacity;
   }
 
   .buttonvp {
-    display: inline-block;
-    background-color: #ff7f50;
+    display: right;
+    background-color: #DB3700;
     color: white;
     font-weight: 400;
     text-decoration: none;
     padding: 10px;
     border-radius: 5px;
-    border-bottom: 2px solid #994c30;
+    border-bottom: 1px solid #994c30;
     transition: 0.8s opacity;
     float: right;
   }
+
+  .buttonvp:hover {
+    color: white;
+    background-color: #fb5113;
+    text-decoration: none;
+    transition: 0.4s
+  }
+  
   
   .button:hover {
-    opacity: 0.8;
-    color: #ffffff;
-    background-color: #ff7f50;
+    color: white;
+    background-color: #fb5113;
     text-decoration: none;
+    transition: 0.4s
   }
   
   .button:active {
@@ -138,18 +145,20 @@
   /*button rules for the mailto button*/
   .button.contact {
     background-color: transparent;
-    color: #ff7f50;
+    color: #DB3700;
     text-transform: uppercase;
-    border: 2px solid #ff7f50;
+    border: 2px solid #DB3700;
     transition: 0.8s opacity;
   }
   
   /*button class hover and active state*/
   
   .button.contact:hover {
-    opacity: 0.8;
-    background-color: #ff7f50;
+    opacity: 100.;
+    background-color: #fb5113;
+    border: 2px solid #fb5113;
     color: #ffffff;
+    transition: 0.4s
   }
   
   .button.contact:active {
@@ -167,7 +176,7 @@
     background-color: #ffffff;
     padding: 10px 0;
     position: relative;
-    border-bottom: 3px solid #ff7f50;
+    border-bottom: 3px solid #fb5113;
   }
   
   /*style the logo*/
